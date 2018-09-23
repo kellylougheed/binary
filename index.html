@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Binary Game</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Game to practice conversion between binary and decimal.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<h1>Binary Game</h1>
+	<div id="main">
+		<p>
+		  <input type="radio" id="binary" name="state" value="binary" checked />
+		  <label for="binary">Binary to Decimal</label>
+		  <input type="radio" id="decimal" name="state" value="decimal" />
+		  <label for="decimal">Decimal to Binary</label>
+		</p>
+		<p>
+		  <input type="radio" id="small" name="range" value="small" checked />
+		  <label for="small">1-16 (base-10)</label>
+		  <input type="radio" id="large" name="range" value="large" />
+		  <label for="large">1-256 (base-10)</label>
+		</p>
+		<p>Your number is...</p>
+		<p id="number"></p>
+		<p>Convert it to <span id="state">decimal</span>!
+		</p>
+		<p><input type="text" id="input"/></p>
+		<p>
+			<button id="button">Submit</button>
+			<button id="new">New Number</button>
+		</p>
+		<p id="result"></p>
+		<p id="points"></p>
+	</div>
+  	<script src="script.js" defer></script>
+  </body>
+</html>
