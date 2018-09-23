@@ -12,7 +12,7 @@ const largeBox = document.querySelector("#large");
 
 let points = 0;
 let max = 16;
-let num = Math.floor(Math.random() * max) + 1;
+let num = Math.floor(Math.random() * max);
 
 numP.innerHTML = num.toString(2);
 
@@ -34,11 +34,11 @@ submit.addEventListener('click', e => {
 
 newNumB.addEventListener('click', e => {
   if (largeBox.checked) {
-    max = 255;
+    max = 256;
   } else {
     max = 16;
   }
-	num = Math.floor(Math.random() * max) + 1;
+	num = Math.floor(Math.random() * max);
   if (binaryBox.checked) {
     numP.innerHTML = num.toString(2);
     stateS.innerHTML = "decimal";
